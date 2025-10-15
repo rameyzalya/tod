@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.todo-app {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.input-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr auto;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+input, select, button {
+    padding: 8px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+button {
+    background: #667eea;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 12px;
+    margin-bottom: 10px;
+    min-height: 16px;
+}
+
+.tabs {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.tab {
+    flex: 1;
+    background: #f8f9fa;
+    color: #666;
+}
+
+.tab.active {
+    background: #667eea;
+    color: white;
+}
+
+.task-list {
+    min-height: 300px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    margin-bottom: 5px;
+    border-left: 4px solid #ddd;
+}
+
+.task-item.selesai {
+    opacity: 0.6;
+    background: #e8f5e8;
+}
+
+.task-item.tinggi { border-left-color: #e74c3c; }
+.task-item.sedang { border-left-color: #f39c12; }
+.task-item.rendah { border-left-color: #27ae60; }
+
+.task-checkbox {
+    margin-right: 10px;
+}
+
+.task-content {
+    flex: 1;
+}
+
+.task-text {
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.task-text.selesai {
+    text-decoration: line-through;
+}
+
+.task-details {
+    font-size: 11px;
+    color: #666;
+}
+
+.priority {
+    padding: 1px 6px;
+    border-radius: 8px;
+    margin-right: 5px;
+    font-size: 10px;
+    color: white;
+}
+
+.tinggi { background: #e74c3c; }
+.sedang { background: #f39c12; }
+.rendah { background: #27ae60; }
+
+.task-actions {
+    display: flex;
+    gap: 5px;
+}
+
+.edit-btn {
+    background: #3498db;
+    padding: 4px 8px;
+    font-size: 11px;
+}
+
+.hapus-btn {
+    background: #e74c3c;
+    padding: 4px 8px;
+    font-size: 11px;
+}
