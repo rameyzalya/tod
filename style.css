@@ -150,3 +150,9 @@ button {
     padding: 4px 8px;
     font-size: 11px;
 }
+
+.edit-error {
+    color: #e74c3c;
+    font-size: 11px;
+    margin-top: 5px;
+}
